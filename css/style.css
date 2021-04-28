@@ -1508,29 +1508,29 @@ body {
       width: 90.62vw;
       margin: 0 0 30px 0; } }
   .services__item-production {
-    background-image: url("..//img/production-desktop_1x.jpg"); }
+    background-image: url("../img/production-desktop_1x.jpg"); }
     @media (max-width: 1023px) {
       .services__item-production {
-        background-image: url("..//img/production-tablet_1x.jpg"); } }
+        background-image: url("../img/production-tablet_1x.jpg"); } }
     @media (max-width: 520px) {
       .services__item-production {
-        background-image: url("..//img/production-mobile_1x.jpg"); } }
+        background-image: url("../img/production-mobile_1x.jpg"); } }
   .services__item-mounting {
-    background-image: url("..//img/mounting-desktop_1x.jpg"); }
+    background-image: url("../img/mounting-desktop_1x.jpg"); }
     @media (max-width: 1023px) {
       .services__item-mounting {
-        background-image: url("..//img/mounting-tablet_1x.jpg"); } }
+        background-image: url("../img/mounting-tablet_1x.jpg"); } }
     @media (max-width: 520px) {
       .services__item-mounting {
-        background-image: url("..//img/mounting-mobile_1x.jpg"); } }
+        background-image: url("../img/mounting-mobile_1x.jpg"); } }
   .services__item-accessories {
-    background-image: url("..//img/accessories-desktop_1x.jpg"); }
+    background-image: url("../img/accessories-desktop_1x.jpg"); }
     @media (max-width: 1023px) {
       .services__item-accessories {
-        background-image: url("..//img/accessories-tablet_1x.jpg"); } }
+        background-image: url("../img/accessories-tablet_1x.jpg"); } }
     @media (max-width: 520px) {
       .services__item-accessories {
-        background-image: url("..//img/accessories-mobile_1x.jpg"); } }
+        background-image: url("../img/accessories-mobile_1x.jpg"); } }
 
 .services__link {
   display: flex;
