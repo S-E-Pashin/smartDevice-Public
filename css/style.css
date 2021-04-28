@@ -632,7 +632,7 @@ body {
       margin: 39px 0 0 1px; } }
 
 .promo__wrapper .promo__button:hover {
-  background-color: rgba(15, 58, 81, red);
+  background-color: red);
   border: 1px solid #ffffff; }
   .promo__wrapper .promo__button:hover span {
     color: #00b2ff; }
