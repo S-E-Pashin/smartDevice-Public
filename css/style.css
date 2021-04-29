@@ -85,20 +85,34 @@ body {
   @media (max-width: 1900px) {
     body {
       background-clip: content-box;
-      background-position: top right;
+      background-position: top left;
       background-size: 1920px 881px; } }
+  @media (max-width: 1510px) {
+    body {
+      background-position: -130px top; } }
+  @media (max-width: 1200px) {
+    body {
+      background-position: -190px top; } }
   @media (max-width: 1023px) {
     body {
       background-image: url("../img/promo-tablet_1x.jpg");
+      background-position: top left;
       background-size: 100% 686px; } }
   @media (max-width: 769px) {
     body {
       background-image: url("../img/promo-tablet_1x.jpg");
       background-size: 770px 647px; } }
+  @media (max-width: 610px) {
+    body {
+      background-position: -150px top; } }
+  @media (max-width: 460px) {
+    body {
+      background-position: -230px top; } }
   @media (max-width: 380px) {
     body {
       background-image: url("../img/promo-mobile_1x.jpg");
-      background-size: 100% 647px; } }
+      background-size: 100% 647px;
+      background-position: left top; } }
   @media (min-height: 4000px) {
     body {
       height: 100vh;
@@ -1484,9 +1498,10 @@ body {
   margin: 59px 0 0 -30px;
   padding: 0;
   list-style: none; }
-  @media (max-width: 1210px) {
+  @media (max-width: 1220px) {
     .services__list {
-      width: 79vw; } }
+      justify-content: space-between;
+      width: 99vw; } }
   @media (max-width: 1023px) {
     .services__list {
       display: flex;
@@ -1517,6 +1532,10 @@ body {
   @media (min-width: 1920px) {
     .services__item {
       max-width: 370px; } }
+  @media (max-width: 1220px) {
+    .services__item {
+      width: 30vw;
+      min-width: 300px; } }
   @media (max-width: 1023px) {
     .services__item {
       width: 93vw;
@@ -1615,7 +1634,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 316px;
+  min-height: 313px;
   background-color: #fafafa; }
   @media (min-height: 4000px) {
     .footer {
@@ -1625,7 +1644,7 @@ body {
   display: grid;
   margin-top: 62px;
   grid-template-columns: 109px 40px 65px 10px 195px 37px 143px 58px 71px 89px 36px 11.66vw 143px 193px;
-  grid-template-rows: minmax(47px, max-content) minmax(5px, max-content) minmax(49px, max-content) minmax(30px, max-content) minmax(25px, max-content) minmax(51px, max-content) minmax(1px, max-content) minmax(5px, max-content) minmax(14px, max-content); }
+  grid-template-rows: minmax(27px, max-content) minmax(14px, max-content) minmax(50px, max-content) minmax(28px, max-content) minmax(81px, max-content) minmax(15px, max-content); }
   @media (min-width: 1919px) {
     .footer__wrapper {
       grid-template-columns: 109px 40px 65px 10px 195px 37px 143px 58px 71px 89px 36px 223px 143px 193px; } }
@@ -1635,9 +1654,9 @@ body {
   @media (max-width: 1023px) {
     .footer__wrapper {
       margin-top: 17px;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
       grid-template-columns: 220px 14px 9.09vw 9.48vw 151px 9px 9.35vw 112px;
-      grid-template-rows: 21px 14px 17px 66px 139px 73px 64px 15px; } }
+      grid-template-rows: minmax(12px, max-content) minmax(14px, max-content) minmax(17px, max-content) minmax(60px, max-content) minmax(139px, max-content) minmax(73px, max-content) minmax(47px, max-content) minmax(15px, max-content); } }
   @media (max-width: 769px) {
     .footer__wrapper {
       display: flex;
@@ -1720,6 +1739,9 @@ body {
   text-align: center;
   color: #203c42;
   letter-spacing: 0; }
+  @media (max-width: 1023px) {
+    .footer__slogan-heading {
+      margin: 4px 0 3px 0; } }
 
 .footer__slogan-text {
   font-family: "Roboto", "Arial", sans-serif;
@@ -1790,9 +1812,14 @@ body {
   opacity: 0.5; }
   @media (max-width: 1023px) {
     .footer__additional-information a {
+      display: block;
       font-size: 13px;
       letter-spacing: 0;
-      word-spacing: 4px; } }
+      word-spacing: 4px;
+      margin-top: 11px; } }
+  @media (max-width: 769px) {
+    .footer__additional-information a {
+      margin-top: 1px; } }
 
 .contacts {
   display: flex;
@@ -1922,15 +1949,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  grid-row: 2/7;
   grid-column: 1/2;
   align-items: start;
   grid-row: 4/5; }
   @media (max-width: 1023px) {
     .social {
-      grid-row: 1/4;
+      grid-row: 2/3;
       grid-column: -1/-2; } }
   @media (max-width: 769px) {
     .social {
