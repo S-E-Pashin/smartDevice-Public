@@ -345,7 +345,7 @@ body {
     .main-nav {
       grid-column: 1/3;
       grid-row: 5/7;
-      grid-template-rows: minmax(135px, max-content) minmax(77px, max-content);
+      grid-template-rows: minmax(138px, max-content) minmax(77px, max-content);
       grid-template-columns: 235px; } }
   @media (max-width: 769px) {
     .main-nav {
@@ -437,7 +437,7 @@ body {
     .main-nav__second-list {
       grid-column: 1/2;
       grid-row: 2/3;
-      margin: 10px 0 0 0; } }
+      margin: 8px 0 0 0; } }
   @media (max-width: 769px) {
     .main-nav__second-list {
       width: 90vw;
@@ -747,7 +747,7 @@ body {
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
-  margin: 98px 0 0 0;
+  margin: 95px 0 0 0;
   max-width: 1226px; }
   @media (max-width: 1023px) {
     .form__wrapper {
@@ -1571,7 +1571,7 @@ body {
       min-height: 256px; } }
 
 .services__item-heading {
-  margin: 53px 0 0 43px; }
+  margin: 50px 0 0 43px; }
   @media (max-width: 1023px) {
     .services__item-heading {
       margin: 40px 0 0 43px; } }
@@ -1623,9 +1623,9 @@ body {
 
 .footer__wrapper {
   display: grid;
-  margin-top: 64px;
+  margin-top: 62px;
   grid-template-columns: 109px 40px 65px 10px 195px 37px 143px 58px 71px 89px 36px 11.66vw 143px 193px;
-  grid-template-rows: minmax(47px, max-content) minmax(5px, max-content) minmax(54px, max-content) minmax(5px, max-content) minmax(25px, max-content) minmax(51px, max-content) minmax(1px, max-content) minmax(18px, max-content) minmax(14px, max-content); }
+  grid-template-rows: minmax(47px, max-content) minmax(5px, max-content) minmax(49px, max-content) minmax(30px, max-content) minmax(25px, max-content) minmax(51px, max-content) minmax(1px, max-content) minmax(5px, max-content) minmax(14px, max-content); }
   @media (min-width: 1919px) {
     .footer__wrapper {
       grid-template-columns: 109px 40px 65px 10px 195px 37px 143px 58px 71px 89px 36px 223px 143px 193px; } }
@@ -1665,7 +1665,7 @@ body {
 .footer::before {
   content: "";
   position: absolute;
-  bottom: 52px;
+  bottom: 55px;
   width: 100%;
   height: 1px;
   background-color: #626962;
@@ -1712,7 +1712,7 @@ body {
       margin: 0 2px 0 0; } }
 
 .footer__slogan-heading {
-  margin: 0 0 3px 0;
+  margin: -1px 0 3px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 25px;
   line-height: 25px;
@@ -1925,7 +1925,9 @@ body {
   align-items: center;
   flex-wrap: wrap;
   grid-row: 2/7;
-  grid-column: 1/2; }
+  grid-column: 1/2;
+  align-items: start;
+  grid-row: 4/5; }
   @media (max-width: 1023px) {
     .social {
       grid-row: 1/4;
