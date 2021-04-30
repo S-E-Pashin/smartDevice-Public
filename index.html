@@ -15,7 +15,7 @@
 <body class="body">
 <header class="header">
   <div class="header__wrapper">
-    <a href="#" class="header__logo-wrapper" aria-label="Вы находитесь на изображении логотипа компании Smart Device.">
+    <a class="header__logo-wrapper header__logo-wrapper--disabled" aria-label="Вы находитесь на изображении логотипа компании Smart Device.">
 
       <div class="header__logo">
         <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -244,25 +244,25 @@
           <div class="form__user-wrapper">
             <div class="form__field form__field-name">
               <label for="form-id-name" class="form__label visually_hidden">Поле для ввода имени пользователя</label>
-              <input type="text" name="form-name-user-name" placeholder="Имя" id="form-id-name" required="" minlength="1" maxlength="20">
+              <input title="Введите ваше имя" type="text" name="form-name-user-name" placeholder="Имя" id="form-id-name" required="" minlength="1" maxlength="20">
             </div>
             <div class="form__field form__field-tel">
               <label for="form-id-tel" class="visually_hidden">Поле для ввода телефона</label>
-              <input type="tel" name="form-name-tel" placeholder="Телефон" id="form-id-tel" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+              <input title="Введите номер вашего телефона" type="tel" name="form-name-tel" placeholder="Телефон" id="form-id-tel" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
             </div>
           </div>
 
           <div class="form__field form__field-message">
             <label for="form-id-message" class="visually_hidden">Поле для сообщения</label>
-            <textarea rows="10" cols="20" name="form-name-message" placeholder="Ваш вопрос" id="form-id-message" required=""></textarea>
+            <textarea title="Напишите ваш вопрос в этом поле" rows="10" cols="20" name="form-name-message" placeholder="Ваш вопрос" id="form-id-message" required=""></textarea>
           </div>
 
           <div class="form__footer">
-            <button class="form__button-submit" type="submit" aria-label="Нажмите для того что бы мы смогли с вами связаться">
+            <button class="form__button-submit" type="submit" aria-label="Нажмите для того что бы мы смогли с вами связаться" data-title="дать согласие на обработку">
               Задать вопрос
             </button>
 
-            <div class="form__checkbox-wrapper">
+            <div class="form__checkbox-wrapper" tabindex="1" data-title="Для заполнения и отправки формы необходимо дать согласие на обработку персональных данных">
               <input class="visually_hidden form__checkbox" type="checkbox" name="form__checkbox-name" value="form__checkbox" id="form__checkbox-id" checked="">
               <label for="form__checkbox-id" class="form__checkbox-label">Я согласен на обработку персональных данных</label>
 
@@ -281,7 +281,7 @@
 
 <footer class="footer">
   <div class="footer__wrapper">
-    <a href="#" class="footer__logo-wrapper" aria-label="Вы находитесь на изображении логотипа компании Smart Device.">
+    <a class="footer__logo-wrapper footer__logo-wrapper--disabled" aria-label="Вы находитесь на изображении логотипа компании Smart Device.">
       <div class="footer__logo">
         <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#icon-logo-desktop"></use>
@@ -406,7 +406,7 @@
             отправить
           </button>
 
-          <div class="popup__checkbox-wrapper">
+          <div class="popup__checkbox-wrapper" tabindex="1" data-title="Для заполнения и отправки формы необходимо дать согласие на обработку персональных данных">
             <input class="visually_hidden popup__checkbox" type="checkbox" name="popup__checkbox-name" value="popup__checkbox" id="popup__checkbox-id" checked="">
             <label for="popup__checkbox-id" class="popup__checkbox-label">Я согласен на обработку персональных данных</label>
 
